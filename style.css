@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+body{
+    background-color: black;
+    background-image: radial-gradient(rgb(65, 65, 65) 1px,transparent 1px);
+    background-size: 28px 28px;
+    color: whitesmoke;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.nav-links{
+    display: flex;
+    column-gap: 60px;
+   
+}
+.nav-links a{
+    text-decoration: none;
+    color: rgb(246, 246, 246);
+    font-weight: 600;
+}
+.nav-links a:hover{
+    color: #fa25ba;
+    text-decoration: underline;
+}
+.toggle-menu{
+    display: none;
+}
+.side-navbar{
+    background-color: black;
+    color: aliceblue;
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    display: none;
+    left: 0;
+    padding: 20px;
+}
+.sidenavdata{
+    color: white;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+.sidenavdata:hover{
+    text-decoration: underline;
+}
+.logo{
+    font-weight: 700;
+    margin-left: 20px;
+}
+.hero-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
+.heading h1 , .gardient-text{
+    font-size: 70px;
+    font-weight: 600; 
+}
+.subheading{
+    font-size: 20px;
+    margin-top: 800px;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+
+}
+.heading h4{
+    color: rgb(74, 74, 74);
+
+}
+.button-1{
+    padding: 10px;
+    border-radius: 05px;
+    border-style: none;
+    cursor: pointer;
+    
+}
+.navbar{
+    background: rgba(255, 255, 255, 0.03);       /* very light transparent */
+    backdrop-filter: blur(25px);                /* strong blur */
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.1);  /* subtle white border */
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.05), /* soft light glow */
+                0 4px 20px rgba(0, 0, 0, 0.6); 
+                color: white;
+    transition: 0.3s ease-in-out;
+}
+.navbar:hover{
+    background: rgba(255, 255, 255, 0.1);       /* very light transparent */
+    backdrop-filter: blur(25px);                /* strong blur */
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.2);  /* subtle white border */
+    box-shadow:  /* soft light glow */
+                0 4px 20px rgba(254, 30, 127, 0.6); 
+               
+    transition: 0.3s ease-in-out;
+}
+.logo{
+    background: linear-gradient(90deg, #cd69d0, #fd4aa1); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    
+    background-clip: text;
+    color: transparent;
+  }
+  .gardient-text{
+    background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80, #fa156d);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: gradientShift 6s ease infinite;
+  }
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+.button-2{
+    border-radius: 05px;
+    border-style: solid;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    margin-left: 30px;
+}
+
+
+@media screen and (max-width:800px) {
+    .toggle-menu{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+    .heading{
+        text-align: center;
+        font-size: 10px;
+        font-weight: 500;
+        
+    }
+}
