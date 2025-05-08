@@ -6,6 +6,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 body{
     background-color: black;
@@ -18,11 +19,12 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+    z-index: 1000;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .nav-links{
     display: flex;
-    column-gap: 60px;
+    column-gap: 90px;
    
 }
 .nav-links a{
@@ -46,6 +48,8 @@ body{
     display: none;
     left: 0;
     padding: 20px;
+    z-index: 1000;
+    top: 0%;
 }
 .sidenavdata{
     color: white;
@@ -95,6 +99,9 @@ body{
               0 4px 20px rgba(0, 0, 0, 0.6);
   color: white;
   transition: 0.3s ease-in-out;
+  position: fixed;
+  top: 0px;
+  width: 100%;
 }
 .navbar:hover{
     background: rgba(255, 255, 255, 0.1);       
@@ -161,13 +168,13 @@ body{
     justify-content: space-between;
     align-items: center;
     gap: 30px;
-    margin: 30px;
+    margin: 20px;
  }
  .container-1 , .container-2 , .container-3{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.1); ;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .container-1 p, .container-2 p , .container-3 p{
     color: rgb(103, 103, 103);
@@ -185,6 +192,125 @@ body{
 i:hover{
     cursor: pointer;
 }
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin: 30px;
+  }
+  .skill-container-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin: 30px;
+  }
+  
+  .card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.1);
+  }
+  
+  .card h2 {
+    color: #b76aff;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  
+  .skill {
+    margin-bottom: 16px;
+  }
+  
+  .skill span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  
+  .bar {
+    width: 100%;
+    background: #2a2a2a;
+    border-radius: 10px;
+    height: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .fill {
+    height: 100%;
+    background: linear-gradient(to right, #ff4d94, #b76aff);
+    border-radius: 10px;
+    position: relative;
+    font-size: 12px;
+    text-align: right;
+    padding-right: 6px;
+    line-height: 10px;
+    color: #eaeaea;
+  }
+  .about-us button{
+    background-color: #fa156d;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none; 
+  }
+.about-us button:hover{
+        background-color: #b76aff;
+        color: black;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+}
+.about-us p{
+    color: #989898;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.container-1:hover, .container-2:hover, .container-3:hover{
+    box-shadow: rgba(255, 65, 201, 0.25) 0px 13px 27px -5px, rgba(232, 54, 255, 0.3) 0px 8px 16px -8px;
+    transition: 0.3s ease-in-out;
+}
+.contact-container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    background: linear-gradient(90deg, #020202, #252525, #020202);
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.1);
+    
+}
+.contact-container input{
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+    display: inline-block;
+    width: 50%;
+    margin-top: 20px;
+}
+.contact-container button{
+    background-color: #fa156d;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none; 
+    cursor: pointer;
+    transition: 0.2s;
+}
+.contact-container button:hover{
+    background-color: #fa15b1;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none; 
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
 
 
 @media screen and (max-width:800px) {
@@ -205,5 +331,11 @@ i:hover{
     }
     .service-container-2{
         flex-direction: column;
+    }
+    .about-us p{
+        color: #989898;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 14px;
     }
 }

@@ -3,37 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agam Creations</title>
+    <title>Agam - Digital Multimedia Solutions</title>
     <meta name="description" content="Agam is a multimedia company crafting exceptional digital experiences through video, animation, and interactive design."/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+<section id="header-sec">
     <nav class="navbar">
-   <h1 class="logo">அகம் | Agam</h1>
+   <h1 class="logo" id="logo">அகம் | Agam</h1>
    <div class="nav-links">
         <p><a href="" class="navdata">Home</a></p>
-        <p><a href="" class="navdata">Service</a></p>
-        <p><a href="" class="navdata">Projects</a></p>
-        <p><a href="" class="navdata">About</a></p>
-        <p><a href="" class="navdata">Contact</a></p>
+        <p><a href="#hero-section" class="navdata">Service</a></p>
+        <p><a href="#about" class="navdata">About</a></p>
+        <p><a href="#contact-us" class="navdata">Contact</a></p>
    </div>
    <div class="toggle-menu" onclick="opennav()">
     <i class="fa-solid fa-bars"></i>
 </div>
 </nav>
+
 <div class="side-navbar">
     <p style="text-align: right;" onclick="closenav()">
     <i class="fa-solid fa-xmark"></i>
     </p>
     <div class="side-nav-links">
         <p class="sidenavdata"><a href="" class="sidenavdata">Home</a></p>
-        <p class="sidenavdata"><a href="" class="sidenavdata">Services</a></p>
-        <p class="sidenavdata"><a href="" class="sidenavdata">About</a></p>
-        <p class="sidenavdata"><a href="" class="sidenavdata">Contact</a></p>
+        <p class="sidenavdata"><a href="#hero-section" class="sidenavdata">Services</a></p>
+        <p class="sidenavdata"><a href="#about" class="sidenavdata">About</a></p>
+        <p class="sidenavdata"><a href="#contact-us" class="sidenavdata">Contact</a></p>
 </div>
 </div>
-<div class="hero-section">
+</section>
+<div class="hero-section" id="hero-section">
     <div class="heading">
         <h1>We Create <span class="gardient-text"> Digital Magic</span></h1>
         <center>
@@ -47,6 +49,7 @@
         </center>
     </div>
 </div>
+
 <br>
 <br>
 <br>
@@ -56,37 +59,121 @@
 <div class="service-container" id="service-container">
     <div class="container-1">
         <h2>📽️</h2>
-        <h2 class="con-head">Video Production</h2>
-        <p>From corporate videos to creative storytelling. We deliver high-quality vvideo editing solutios tailored to your vision using advanced tools to craft engaging , polished content for any platform.</p>
+        <h2 class="con-head">Video Production & Design</h2>
+        <p>From corporate videos to creative storytelling. We deliver high-quality video editing solutions tailored to your vision suitable to all type of social media.</p>
     </div>
     <div class="container-2">
         <h2>🎮</h2>
         <h2 class="con-head">3D & Game Development</h2>
-        <p>We specialize in cutting edge 3D design and immersive game development , blending creativity with technology. From concepts to reality , We bring your virtual world to life with precesion and innovation.</p>
+        <p>We specialize in cutting edge 3D design and immersive game development , blending creativity with technology.</p>
     </div>
     <div class="container-3">
         <h2>🌐</h2>
         <h2 class="con-head">Software Development</h2>
-        <p>We build robust,scalable software solutions tailored to your business needs that drives innovation and efficiency. From concepts to deployment, our team ensures clean code,intutive design and reliable performance , turning complex problems into smart applications.</p>
+        <p>We build robust,scalable software solutions tailored to your business needs that drives innovation and efficiency. From concepts to deployment.</p>
     </div>
 </div>
-<div class="service-container-2">
-    <div class="container-3">
-        <h2>🎨</h2>
-        <h2 class="con-head">Graphic Design</h2>
-        <p>We deliver impactful design solutions that elevate your brand identity. From posters and branding to digital and print media , our designs combine creativity with purpose. </p>
+<center>
+    <h1>Our Tools & Expertise</h1>
+</center>
+<br>
+<section id="projects">
+<div class="skill-container">
+    <div class="card">
+      <h2>Video Editing</h2>
+      <div class="skill">
+        <span>Adobe After Effects</span>
+        <div class="bar"><div class="fill" style="width: 95%;">95%</div></div>
+      </div>
+      <div class="skill">
+        <span>Adobe Premiere Pro</span>
+        <div class="bar"><div class="fill" style="width: 92%;">92%</div></div>
+      </div>
+      <div class="skill">
+        <span>DaVinci Resolve</span>
+        <div class="bar"><div class="fill" style="width: 88%;">88%</div></div>
+      </div>
     </div>
-    <div class="container-3">
-        <h2>📝</h2>
-        <h2 class="con-head">Content Management</h2>
-        <p>We provide end-to-end content management solutions to keep your digital presence organized and effective. From content creation to publishing and performace tracking , we ensure consistency and quality.</p>
-    </div>
-    <div class="container-3">
-        <h2>📊</h2>
-        <h2 class="con-head">Digital Marketing</h2>
-        <p>We craft data driven digital marketing strategies that boost visibility and drive results. From SEO and social media to paid campaigns and content marketing , we cover it all. Our team ensures your braand reaches the right audience at right time.</p>
+
+    <div class="card">
+      <h2>3D & Animation</h2>
+      <div class="skill">
+        <span>Blender</span>
+        <div class="bar"><div class="fill" style="width: 90%;">90%</div></div>
+      </div>
+      <div class="skill">
+        <span>Unreal Engine</span>
+        <div class="bar"><div class="fill" style="width: 85%;">85%</div></div>
+      </div>
+      <div class="skill">
+        <span>Cascadeur</span>
+        <div class="bar"><div class="fill" style="width: 82%;">82%</div></div>
+      </div>
     </div>
 </div>
+</section>
+<div class="skill-container-2">
+    <div class="card">
+      <h2>Web Development</h2>
+      <div class="skill">
+        <span>Frontend</span>
+        <div class="bar"><div class="fill" style="width: 88%;">88%</div></div>
+      </div>
+      <div class="skill">
+        <span>Backend</span>
+        <div class="bar"><div class="fill" style="width: 80%;">85%</div></div>
+      </div>
+      <div class="skill">
+        <span>AI Tools</span>
+        <div class="bar"><div class="fill" style="width: 80%;">92%</div></div>
+      </div>
+    </div>
+    <section id="about">
+    <div class="card">
+      <h2>Design</h2>
+      <div class="skill">
+        <span>Adobe Photoshop</span>
+        <div class="bar"><div class="fill" style="width: 94%;">94%</div></div>
+      </div>
+      <div class="skill">
+        <span>Figma</span>
+        <div class="bar"><div class="fill" style="width: 90%;">90%</div></div>
+      </div>
+      <div class="skill">
+        <span>Adobe Illustrator</span>
+        <div class="bar"><div class="fill" style="width: 87%;">87%</div></div>
+      </div>
+    </div>
+</div>
+<section id="contact-us">
+<div class="about-us">
+    <center>
+    <h1>About Us</h1>
+    </center>
+    <br>
+    <p>Agam Creations is a multimedia company dedicated to crafting exceptional digital experiences. Our team of skilled professionals specializes in video production, animation, web design, and software development. We are passionate about bringing your ideas to life through innovative storytelling and cutting-edge technology.
+    With a commitment to quality and creativity, we strive to exceed our clients' expectations and deliver solutions that resonate with their audience. Whether it's a captivating video, an immersive game, or a user-friendly website, we are here to help you achieve your goals.</p>
+    <br>
+    <center>
+    <button>Contact Us</button>
+    </center>
+    <br>
+  </section>
+    <div class="contact">
+      <center>
+      <h1>Contact Us</h1>
+      </center>
+      <div class="contact-container">
+        <input type="text" placeholder="Name" class="contact-input">
+        <input type="email" placeholder="Email" class="contact-input">
+        <input type="text" placeholder="message" class="contact-input">
+        <button class="contact-button">Send</button>
+        
+      </div>
+    </div>
+</div>
+</section>
+
     <script src="script.js"></script>
     
 </body>
