@@ -8,7 +8,7 @@
   font-style: normal;
   scroll-behavior: smooth;
 }
-body{
+.body{
     background-color: black;
     background-image: radial-gradient(rgb(65, 65, 65) 1px,transparent 1px);
     background-size: 28px 28px;
@@ -309,6 +309,35 @@ i:hover{
     cursor: pointer;
     transition: 0.2s;
 }
+.our-projects{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+}
+.project-container{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1); ;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+}
+.project-container p{
+    color: rgb(103, 103, 103);
+    font-size: 12px;
+    padding: 10px;
+   
+}
+.project-container button{
+    background-color: #fa156d;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none; 
+    cursor: pointer;
+}
 
 
 
@@ -330,6 +359,9 @@ i:hover{
         flex-direction: column;
     }
     .service-container-2{
+        flex-direction: column;
+    }
+    .our-projects{
         flex-direction: column;
     }
     .about-us p{
